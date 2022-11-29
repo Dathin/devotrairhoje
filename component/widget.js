@@ -67,7 +67,7 @@ export default class Widget extends React.Component {
           {this.state.reason}
         </h2>
         <span id="reload" onClick={this.onSpacePressOrClick}>
-          Aperte <span className="space-btn">Espaço</span> ou Clique
+          Aperte <span className="space-btn">Espaço</span> ou Clique para mais opiniões
         </span>
       </div>
     )
