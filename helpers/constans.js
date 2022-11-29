@@ -19,7 +19,7 @@ export const shouldIDeploy = function (time) {
 }
 
 export const shouldIDeployAnswerImage = function (time) {
-  return shouldIDeploy(time) ? `${HOST}/yes.png` : `${HOST}/no.png`
+  return `${HOST}/yes.png`;
 }
 
 export const shouldIDeployColorTheme = function (time) {
@@ -27,7 +27,7 @@ export const shouldIDeployColorTheme = function (time) {
 }
 
 export const shouldIDeployFavIcon = function (time) {
-  return shouldIDeploy(time) ? `${HOST}/dots.png` : `${HOST}/dots-red.png`
+  return `${HOST}/yes.png`;
 }
 
 export const getRandom = function ranDay(list) {
