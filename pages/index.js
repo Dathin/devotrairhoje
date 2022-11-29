@@ -60,7 +60,7 @@ class Page extends React.Component {
             property="og:image"
             content={shouldIDeployAnswerImage(this.state.now)}
           />
-          <title>Should I Deploy Today?</title>
+          <title>Devo Trair Hoje?</title>
         </Head>
         <div
           className={`wrapper ${
@@ -71,12 +71,6 @@ class Page extends React.Component {
             initialReason={this.props.initialReason}
             now={this.state.now}
           />
-          <div className="meta">
-            <Footer
-              timezone={this.state.timezone}
-              changeTimeZone={this.changeTimeZone}
-            />
-          </div>
         </div>
       </>
     )

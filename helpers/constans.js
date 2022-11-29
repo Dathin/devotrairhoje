@@ -39,38 +39,5 @@ export const getRandom = function ranDay(list) {
  * @param string[]
  */
 export function dayHelper(time) {
-  time = time || new Time()
-
-  if (time.isDayBeforeChristmas()) {
-    return REASONS_FOR_DAY_BEFORE_CHRISTMAS
-  }
-  if (time.isChristmas()) {
-    return REASONS_FOR_CHRISTMAS
-  }
-
-  if (time.isNewYear()) {
-    return REASONS_NEW_YEAR
-  }
-
-  if (time.isFriday13th()) {
-    return REASONS_FOR_FRIDAY_13TH
-  }
-
-  if (time.isFridayAfternoon()) {
-    return REASONS_FOR_FRIDAY_AFTERNOON
-  }
-
-  if (time.isFriday()) {
-    return REASONS_TO_NOT_DEPLOY
-  }
-  if (time.isThursdayAfternoon()) {
-    return REASONS_FOR_THURSDAY_AFTERNOON
-  }
-  if (time.isAfternoon() && !time.isWeekend()) {
-    return REASONS_FOR_AFTERNOON
-  }
-  if (time.isWeekend()) {
-    return REASONS_FOR_WEEKEND
-  }
   return REASONS_TO_DEPLOY
 }
